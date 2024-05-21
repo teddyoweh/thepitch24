@@ -1,4 +1,4 @@
-$temo: "teff";
+$temo: 'teff';
 .landing-page {
   display: flex;
   flex-direction: row;
@@ -7,7 +7,16 @@ $temo: "teff";
     border-width: 0px 1px 0px 0px;
     border-style: solid;
     border-color: #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
+}
+.top-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-top: 1rem;
 }
 .landing {
   min-height: 100vh;
@@ -54,7 +63,7 @@ $temo: "teff";
     margin-right: 10px;
     label {
       font-size: 14px;
-      font-family: "GT America";
+      font-family: 'GT America';
       color: #333;
       margin-right: 6px;
       margin-left: 8px;
@@ -93,14 +102,14 @@ $temo: "teff";
       font-weight: 900;
       font-size: 20px;
       line-height: 1px;
-      font-family: "GT America";
+      font-family: 'GT America';
     }
     input {
       background-color: transparent;
       outline: none;
       border: none;
       width: 100%;
-      font-family: "Lato";
+      font-family: 'Lato';
       font-size: 16px;
       &::content {
         color: #000;
@@ -124,7 +133,7 @@ $temo: "teff";
     label {
       font-weight: 600;
       font-size: 50px;
-      font-family: "Canela Web";
+      font-family: 'Canela Web';
       text-align: center;
       color: #111;
       margin-bottom: 26px;
@@ -149,7 +158,7 @@ $temo: "teff";
         border-radius: 10px;
 
         label {
-          font-family: "Canela Web";
+          font-family: 'Canela Web';
           color: #3e3eff87;
         }
       }
@@ -172,7 +181,7 @@ $temo: "teff";
       display: flex;
       flex-direction: row;
       align-items: center;
-      font-family: "GT America";
+      font-family: 'GT America';
       width: max-content;
       // background-color: #f5f5f5;
       border-width: 1px 1px 3px;
@@ -248,14 +257,14 @@ $temo: "teff";
             label {
               font-size: 18px;
               font-weight: 600;
-              font-family: "GT America";
+              font-family: 'GT America';
               color: #333;
               margin-right: 10px;
             }
             span {
               font-size: 21px;
               font-weight: 400;
-              font-family: "GT America";
+              font-family: 'GT America';
               color: #333;
             }
           }
@@ -274,12 +283,12 @@ $temo: "teff";
               align-items: center;
               justify-content: center;
               border-radius: 60px;
-              background-color: #f1f1f1;
-              font-family: "Lato";
+              background-color: #000;
+              font-family: 'Lato';
               font-weight: 500;
               font-size: 16px;
               cursor: pointer;
-              color: #000;
+              color: #fff;
               border-width: 1px;
               border-style: solid;
               border-color: #ddd;
@@ -296,9 +305,9 @@ $temo: "teff";
               flex-direction: row;
               align-items: center;
               justify-content: center;
-              font-family: "Lato";
+              font-family: 'Lato';
               border-radius: 60px;
-              background-color: #7171ca;
+              background-color: #b77738;
               margin-left: 10px;
               cursor: pointer;
               color: white;
