@@ -6,6 +6,7 @@ import hero2 from './assets/hero3.png';
 import Nav from './components/Nav';
 import React, {useEffect, useState} from 'react';
 import {Box, Divider, Text} from '@chakra-ui/react';
+import {useRouter} from 'next/navigation';
 
 export default function Home() {
   // const catergories = [
@@ -89,6 +90,7 @@ export default function Home() {
     },
   ];
   const [isSearchBoxAbsolute, setIsSearchBoxAbsolute] = useState(false);
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       const heroBottom = document.querySelector('.hero');
@@ -104,7 +106,7 @@ export default function Home() {
   }, []);
   return (
     <div className='landing-page'>
-      <Box className='sidebar' mb='3rem'>
+      <Box className='sidebar'>
         <Box className='top-sidebar'>
           <Box>
             <Text
@@ -221,7 +223,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className='product-btns'>
-                      <div className='add-cart'>
+                      <div
+                        className='add-cart'
+                        onClick={() => router.push('/product_page')}
+                      >
                         {/* <i class='bx bx-cart'/> */}
                         <label htmlFor=''>Add to Cart</label>
                       </div>
