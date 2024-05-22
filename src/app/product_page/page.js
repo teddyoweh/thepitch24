@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
-import "./styles/landing.scss";
-import hero1 from "./assets/hero1.png";
-import hero2 from "./assets/hero3.png";
-import Nav from "./components/Nav";
+import "../styles/landing.scss";
+import "../styles/product_page.scss";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -107,104 +105,33 @@ export default function Home() {
       <div className="sidebar">
         <div className="top-sidebar"></div>
       </div>
-      <div className="landing">
-        {/*  
-          <div className="head">
-            <label htmlFor="">
-              <label htmlFor="">
-              Shop with 
-              </label>
-              <span>
-                <label htmlFor="">Videos</label>
-           
-              </span>
-            </label>
-          </div> */}
-        <div className="center-box">
-          <div className="center">
-            <div className="se">
-              <div className="location-box">
-                <div className="left">
-                  <i class="bx bx-map"></i>
-                  <label htmlFor="">Baltimore, MD</label>
-                </div>
+      <div className="product_page">
+        <div className="left">
+          <div className="product-overlay">
+            <video
+              controlsList="nodownload"
+              // control
+              //make it play on click and if playing then pause
+              onClick={(e) => {
+                e.preventDefault();
+                e.target.paused ? e.target.play() : e.target.pause();
+              }}
+              // controls
 
-                <i class="bx bx-chevron-down"></i>
-              </div>
-              <div className="search-box">
-                <div className="left">
-                  <i class="bx bx-search"></i>
-                  <input
-                    type="text"
-                    placeholder="What are you looking for ... "
-                  />
-                </div>
-                <i class="bx bx-slider-alt"></i>
-              </div>
-            </div>
-            <div className="categories">
-              {catergories.map((category, index) => {
-                return (
-                  <div key={index} classsName="category">
-                    <div className="category-img"></div>
-                    <i className={category.icon}></i>
-                    <label htmlFor="">{category.label}</label>
-                  </div>
-                );
-              })}
-            </div>{" "}
-          </div>{" "}
+              src={videos[0]}
+            />
+          </div>
         </div>
-
-        <div className="content">
-          <div className="content-body">
-            {videos.map((item, index) => {
-              return (
-                <div key={index} className="product">
-                  <div className="product-body">
-                    <video
-                      width="100%"
-                      height="100%"
-                      controlsList="nodownload"
-                      // control
-                      //make it play on click and if playing then pause
-                      onClick={(e) => {
-                        e.preventDefault();
-                        e.target.paused ? e.target.play() : e.target.pause();
-                      }}
-                      // controls
-
-                      src={item}
-                    />
-                    {/* <div className="overlay">
-                    <div className="overlay-btns">
-                      <div className="play">
-                        <i class='bx bx-play'/>
-                      </div>
-
-                  </div> */}
-                  </div>
-
-                  <div className="product-bottom">
-                    <div className="product-label">
-                      <label htmlFor="">Product Name</label>
-                      <div className="price">
-                        <span>{index % 3 === 0 ? "$20/h" : "$114"}</span>
-                      </div>
-                    </div>
-                    <div className="product-btns">
-                      <div className="add-cart">
-                        {/* <i class='bx bx-cart'/> */}
-                        <label htmlFor="">Add to Cart</label>
-                      </div>
-                      <div className="save">
-                        <label htmlFor="">Save</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+        <div className="right">
+          <div className="top">
+            <span>Teddy's Bakery</span>
+            <label htmlFor="">Black Forest Chocalate Cake - 100% Fresh </label>
+          </div>
+          <div className="price">
+            <span>$1,000 - $5,000</span>
+          </div>
+          <div className="book-div">
+            <a href="">Book now</a>
           </div>
         </div>
       </div>
