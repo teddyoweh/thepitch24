@@ -156,7 +156,7 @@ export default function Home() {
               <div className='location-box'>
                 <div className='left'>
                   <i class='bx bx-map'></i>
-                  <label htmlFor=''>Baltimore, MD</label>
+                  <label htmlFor=''>Atlanta, GA</label>
                 </div>
 
                 <i class='bx bx-chevron-down'></i>
