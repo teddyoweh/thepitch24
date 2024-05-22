@@ -3,6 +3,7 @@ import '../styles/landing.scss';
 import {Box, Button, Flex, Icon, Input, Text, Textarea} from '@chakra-ui/react';
 import React, {useRef, useState} from 'react';
 import UploadIcon from '../assets/icons/uploadIcon';
+import TextResult from '../components/TextResult';
 
 const text =
   'The man is wearing a black short-sleeve t-shirt, a silver necklace, and black gloves while he decorates the cake.';
@@ -22,48 +23,6 @@ const Upload = () => {
   };
 
   return (
-    // <Box
-    //   h='60vh'
-    //   display={'flex'}
-    //   justifyContent={'center'}
-    //   alignItems={'center'}
-    // >
-    //   <Box width='271px'>
-    //     <Box display={'flex'} justifyContent={'center'} alignItems={'center'}>
-    //       <Box
-    //         className='link'
-    //         onClick={() => setShow(true)}
-    //         fontFamily={'GT America'}
-    //       >
-    //         Link
-    //       </Box>
-    //     </Box>
-    //     {show && (
-    //       <Input
-    //         outline='none'
-    //         border='1px solid #141414'
-    //         mt='1rem'
-    //         width='270px'
-    //         height='40px'
-    //       />
-    //     )}
-    //     <Text
-    //       mt='.5rem'
-    //       cursor='pointer'
-    //       fontFamily={'GT America'}
-    //       mx='auto'
-    //       w='115px'
-    //     >
-    //       Or{' '}
-    //       <label htmlFor='browse'>
-    //         <Text as='span' color='blue'>
-    //           browse files
-    //         </Text>
-    //       </label>
-    //       <Input type='file' id='browse' display={'none'} />
-    //     </Text>
-    //   </Box>
-    // </Box>
     <Box>
       <Flex
         mt='100px'
@@ -129,9 +88,7 @@ const Upload = () => {
         >
           Analyze
         </Button>
-        <Text w='500px' mt='1rem' fontFamily={'GT America'}>
-          {state}
-        </Text>
+        <TextResult text={state} delay={50} />
       </Flex>
     </Box>
   );
