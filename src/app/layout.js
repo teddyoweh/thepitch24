@@ -7,7 +7,7 @@ import {Providers} from './providers';
 const inter = Inter({subsets: ['latin']});
 
 export const metadata = {
-  title: 'Mile One - Shop with Videos',
+  title: 'Front Porch - Shop with Videos',
   description:
     'Shop with videos, Your first mile towards business success and customer satisfaction.',
 };

@@ -33,14 +33,14 @@
       span {
         font-size: 47px;
         font-weight: 600;
-        font-family: "Google Sans";
+        font-family: 'Google Sans';
         color: #000;
         margin-right: 10px;
       }
       label {
         font-size: 18px;
         font-weight: 600;
-        font-family: "GT America";
+        font-family: 'GT America';
         color: #a3a3a3;
         margin-right: 10px;
       }
@@ -50,12 +50,13 @@
       span {
         font-size: 28px;
         font-weight: 600;
-        font-family: "GT America";
+        font-family: 'GT America';
         color: #000;
       }
     }
     .book-div {
       margin-top: 20px;
+      cursor: pointer;
       a {
         display: flex;
         flex-direction: row;
@@ -66,7 +67,7 @@
         border-radius: 60px;
         font-size: 20px;
         font-weight: 600;
-        font-family: "GT America";
+        font-family: 'GT America';
         width: max-content;
         transition: all 0.3s ease;
         border-width: 1.5px;
