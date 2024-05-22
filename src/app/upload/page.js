@@ -14,7 +14,7 @@ import React, { useRef, useState } from "react";
 import TextResult from "../components/TextResult";
 
 const text =
-  "The man is wearing a black short-sleeve t-shirt, a silver necklace, and black gloves while he decorates the cake.";
+  "The man is assembling and decorating an elegant, multi-tiered chocolate cake with vibrant black and gold themes. He starts by layering the cake with several sponge layers separated by cream. He then coats the cake with chocolate icing and covers it with fondant. The black fondant is quilted and decorated with gold embellishments and purple ribbons. \n\nThe cake gets further decorated by adding another tier, which is then covered in a smooth, shiny gold finish. Both tiers are adorned with gold accents and drizzled with black ganache. The final touches include adding splashes of gold and an artistic decoration on top, giving the cake a luxurious and sophisticated appearance.";
 
 const Upload = () => {
   const [show, setShow] = useState(false);
