@@ -323,3 +323,24 @@ $temo: 'teff';
     }
   }
 }
+
+.link {
+  // height: 40px;
+  width: 130px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato';
+  border-radius: 60px;
+  background-color: #b77738;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  i {
+    margin-right: 5px;
+    font-size: 19px;
+  }
+}
